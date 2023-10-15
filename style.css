@@ -750,13 +750,76 @@ footer .copyright{
   z-index: -1;
 }
 
+/*************************** About Page starts **************************/
+#apTBanner{
+  background-image: url("assets/about/banner.png");
+  width: 100%;
+  height: 40vh;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  flex-direction: column;
+  padding: 15px;
+}
 
+#apTBanner h2,
+#apTBanner p{
+  color: #fff;
+}
 
+#about-head{
+  display: flex;
+  align-items: center;
+}
 
+#about-head img{
+  width: 50%;
+  height: auto;
+}
 
+#about-head div{
+  padding-left: 40px;
+}
 
+#about-app h1{
+  text-align: center;
+}
 
+#about-app h1 a{
+  text-decoration: none;
+  color: rgb(94, 27, 27);
+}
 
+#about-app .video{
+  width: 70%;
+  height: 100%;
+  margin: 30px auto 0 auto;
+}
+
+#about-app .video video{
+  width: 100%;
+  height: 100%;
+  border-radius: 20px;
+}
+
+/*************************** Contact Page starts **************************/
+#cpTBanner{
+  background-image: url("assets/about/banner.png");
+  width: 100%;
+  height: 40vh;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  flex-direction: column;
+  padding: 15px;
+}
+
+#cpTBanner h2,
+#cpTBanner p{
+  color: #fff;
+}
 
 
 
@@ -954,6 +1017,24 @@ footer .copyright{
     width: 100%;
   }
 
+
+  /* About Page */
+  #about-head {
+    flex-direction: column;
+  }
+
+  #about-head img {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+
+  #about-head div {
+    padding-left: 0;
+  }
+
+  #about-app .video {
+    width: 100%;
+  }
 
 
 
