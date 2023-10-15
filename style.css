@@ -139,7 +139,7 @@ body{
 
 
 
-/* Home page starts */
+/*************************** Home page starts **************************/
 
 #hero{
   background-image: url("assets/hero4.png");
@@ -304,6 +304,11 @@ body{
   position: absolute;
   bottom: 20px;
   right: 10px;
+}
+
+#featuredProducts .container .cart:hover{
+  color: #fff;
+  background-color: #088178;
 }
 
 /* Banner Starts */
@@ -563,8 +568,201 @@ footer .copyright{
 }
 
 
+/*************************** Shop page starts **************************/
+#spTBanner{
+  background-image: url("assets/banner/b1.jpg");
+  width: 100%;
+  height: 40vh;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  flex-direction: column;
+  padding: 15px;
+}
 
-/* Media Queries */
+#spTBanner h2,
+#spTBanner p{
+  color: #fff;
+}
+
+#pegination{
+  text-align: center;
+}
+
+#pegination a{
+  text-decoration: none;
+  background-color: #088178;
+  padding: 15px 20px;
+  border-radius: 4px;
+  color: #fff;
+  font-weight: 600;
+}
+
+#pegination a i{
+  font-size: 16px;
+  font-weight: 600;
+}
+
+/*************************** Single Product page starts **************************/
+
+#prodDetails{
+  display: flex;
+  margin-top: 20px;
+}
+
+#prodDetails .singleProdImg{
+  width: 40%;
+  margin-right: 50px;
+}
+
+.imageGroup{
+  display: flex;
+  justify-content: space-between;
+}
+
+.smallImgCol{
+  flex-basis: 24%;
+  cursor: pointer;
+}
+
+#prodDetails .singleProdDetails{
+  width: 50%;
+  margin-top: 30px;
+}
+
+#prodDetails .singleProdDetails h4{
+  margin: 40px 0 20px 0;
+}
+
+#prodDetails .singleProdDetails h2{
+  font-size: 26px;
+}
+
+#prodDetails .singleProdDetails select{
+  display: block;
+  padding: 5px 10px;
+  margin-bottom: 10px;
+}
+
+#prodDetails .singleProdDetails input{
+  width: 50px;
+  height: 47px;
+  font-size: 16px;
+  padding-left: 10px;
+  margin-left: 10px;
+  text-align: center;
+}
+
+#prodDetails .singleProdDetails input:focus{
+  outline: none;
+}
+
+#prodDetails .singleProdDetails button{
+  background-color: #088178;
+  color: #fff;
+}
+
+#prodDetails .singleProdDetails span{
+  line-height: 25px;
+}
+
+
+/*************************** Blog Page starts **************************/
+#bpTBanner{
+  background-image: url("assets/banner/b19.jpg");
+  width: 100%;
+  height: 40vh;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  flex-direction: column;
+  padding: 15px;
+}
+
+#bpTBanner h2,
+#bpTBanner p{
+  color: #fff;
+}
+
+#blogs {
+  padding: 150px 150px 0 150px;
+}
+
+#blogs .blog-box{
+  display: flex;
+  align-items: center;
+  width: 100%;
+  position: relative;
+  padding-bottom: 90px;
+}
+
+#blogs .blog-img{
+  width: 50%;
+  margin-right: 40px;
+}
+
+#blogs img{
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+}
+
+#blogs .blog-details{
+  width: 50%;
+}
+
+#blogs .blog-details a{
+  text-decoration: none;
+  font-size: 11px;
+  font-weight: 700;
+  color: #000;
+  position: relative;
+  transition: 0.3s;
+}
+
+#blogs .blog-details a:hover{
+  color: #088178;
+}
+
+#blogs .blog-details a::after {
+  content: "";
+  width: 50px;
+  height: 1px;
+  background-color: #000;
+  position: absolute;
+  top: 4px;
+  right: -60px;
+}
+
+#blogs .blog-details a:hover::after{
+  background-color: #088178;
+}
+
+#blogs .blog-box h1{
+  position: absolute;
+  top: -40px;
+  left: 0;
+  font-size: 70px;
+  font-weight: 700;
+  color: #c9cbce;
+  z-index: -1;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*************************** Media Queries starts **************************/
 @media (max-width:800px) {
 
   #navbar{
@@ -721,4 +919,43 @@ footer .copyright{
   footer .copyright{
     text-align: start;
   }
+
+  /* single product page */
+  #prodDetails {
+    display: flex;
+    flex-direction: column;
+  }
+
+  #prodDetails .singleProdImg {
+    width: 100%;
+  }
+
+  #prodDetails .singleProdDetails {
+    width: 100%;
+  }
+
+  /* Blog Page */
+  #blogs {
+    padding: 100px 20px 0 20px;
+  }
+
+  #blogs .blog-box {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  #blogs .blog-img {
+    width: 100%;
+    margin-bottom: 30px;
+  }
+
+  #blogs .blog-details {
+    width: 100%;
+  }
+
+
+
+
+
 }
