@@ -37,54 +37,56 @@
 
     <!----------------- Cart Section ------------------>
     <section id="cart" class="section-p1">
-        <table width="100%">
+        <table  width="100%">
             <thead>
                 <tr>
-                    <td>Remove</td>
                     <td>Image</td>
                     <td>Product</td>
                     <td>Price</td>
                     <td>Quantity</td>
                     <td>SubTotal</td>
+                    <td>Remove</td>
                 </tr>
             </thead>
             <tbody>
-                <!-- <tr>
-                    <td><a href="#"><i class="fa-solid fa-circle-xmark"></i></a></td>
+                <tr class="cart-row">
                     <td><img src="assets/products/f1.jpg" alt=""></td>
                     <td>Flower Printed T-Shirts</td>
-                    <td>$100</td>
-                    <td><input type="number" value="1"></td>
-                    <td>$100</td>
+                    <td class="cart-price">$100</span></td>
+                    <td><input class="cart-quantity" type="number" value="1" ></td>
+                    <td class="item-total">$100</td>
+                    <td><a class="remove-item"><i class="fa-solid fa-circle-xmark"></i></a></td>
                 </tr>
 
-                <tr>
-                    <td><a href="#"><i class="fa-solid fa-circle-xmark"></i></a></td>
+                <tr class="cart-row">
                     <td><img src="assets/products/f2.jpg" alt=""></td>
                     <td>Flower Printed T-Shirts</td>
-                    <td>$100</td>
-                    <td><input type="number" value="1"></td>
-                    <td>$100</td>
+                    <td class="cart-price">$100</td>
+                    <td><input class="cart-quantity" type="number" value="1" ></td>
+                    <td class="item-total">$100</td>
+                    <td><a class="remove-item"><i class="fa-solid fa-circle-xmark"></i></a></td>
                 </tr>
 
-                <tr>
-                    <td><a href="#"><i class="fa-solid fa-circle-xmark"></i></a></td>
+                <tr class="cart-row">
                     <td><img src="assets/products/f3.jpg" alt=""></td>
                     <td>Flower Printed T-Shirts</td>
-                    <td>$100</td>
-                    <td><input type="number" value="1"></td>
-                    <td>$100</td>
-                </tr> -->
+                    <td class="cart-price">$100</td>
+                    <td><input class="cart-quantity" type="number" value="1" ></td>
+                    <td class="item-total">$100</td>
+                    <td><a class="remove-item"><i class="fa-solid fa-circle-xmark"></i></a></td>
+                </tr>
+
             </tbody>
         </table>
     </section>
 
+                
     <!----------------- Cart Add Section ------------------>
     <section id="cart-add" class="section-p1">
         <div id="coupon">
             <h3>Apply Coupon</h3>
             <div>
-                <input type="text" placeholder="Enter Your Coupon">
+                <input class="adding-coupon" type="text" placeholder="Enter Your Coupon">
                 <button class="normal">Apply</button>
             </div>
         </div>
@@ -94,7 +96,7 @@
             <table>
                 <tr>
                     <td>Cart SubTotal</td>
-                    <td>$0</td>
+                    <td class="subTotal">$0</td>
                 </tr>
                 <tr>
                     <td>Shipping</td>
@@ -102,7 +104,7 @@
                 </tr>
                 <tr>
                     <td><strong>Total</strong></td>
-                    <td><Strong>$0</Strong></td>
+                    <td class="final-total"><Strong>$0</Strong></td>
                 </tr>
             </table>
             <button class="normal">Proceed to checkout</button>
