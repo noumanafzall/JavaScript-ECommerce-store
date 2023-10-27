@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://kit.fontawesome.com/8d54003bde.js" crossorigin="anonymous"></script>
+    <script src="script.js" async></script>
     <link rel="stylesheet" href="style.css">
     <title>Cart</title>
 </head>
@@ -37,7 +38,7 @@
 
     <!----------------- Cart Section ------------------>
     <section id="cart" class="section-p1">
-        <table  width="100%">
+        <table class="cart-table" width="100%">
             <thead>
                 <tr>
                     <td>Image</td>
@@ -48,11 +49,11 @@
                     <td>Remove</td>
                 </tr>
             </thead>
-            <tbody>
+             <tbody class="cart-table-body" > 
                 <tr class="cart-row">
                     <td><img src="assets/products/f1.jpg" alt=""></td>
                     <td>Flower Printed T-Shirts</td>
-                    <td class="cart-price">$100</span></td>
+                    <td class="cart-price">$99.99</span></td>
                     <td><input class="cart-quantity" type="number" value="1" ></td>
                     <td class="item-total">$100</td>
                     <td><a class="remove-item"><i class="fa-solid fa-circle-xmark"></i></a></td>
@@ -61,16 +62,7 @@
                 <tr class="cart-row">
                     <td><img src="assets/products/f2.jpg" alt=""></td>
                     <td>Flower Printed T-Shirts</td>
-                    <td class="cart-price">$100</td>
-                    <td><input class="cart-quantity" type="number" value="1" ></td>
-                    <td class="item-total">$100</td>
-                    <td><a class="remove-item"><i class="fa-solid fa-circle-xmark"></i></a></td>
-                </tr>
-
-                <tr class="cart-row">
-                    <td><img src="assets/products/f3.jpg" alt=""></td>
-                    <td>Flower Printed T-Shirts</td>
-                    <td class="cart-price">$100</td>
+                    <td class="cart-price">$99.99</td>
                     <td><input class="cart-quantity" type="number" value="1" ></td>
                     <td class="item-total">$100</td>
                     <td><a class="remove-item"><i class="fa-solid fa-circle-xmark"></i></a></td>
@@ -172,5 +164,4 @@
 
 
 </body>
-    <script src="script.js"></script>
 </html>
